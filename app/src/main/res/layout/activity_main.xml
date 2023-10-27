@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:tag="Tip"
+        android:text="Tip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtServiceAmt"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <EditText
+        android:id="@+id/edtServiceAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="0123456789."
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTip20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20%"
+        app:layout_constraintBottom_toTopOf="@+id/btnTip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnTip18"
+        app:layout_constraintTop_toBottomOf="@+id/edtServiceAmt" />
+
+    <Button
+        android:id="@+id/btnTip18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18%"
+        app:layout_constraintBottom_toTopOf="@+id/btnTip"
+        app:layout_constraintEnd_toStartOf="@id/btnTip20"
+        app:layout_constraintStart_toEndOf="@id/btnTip15"
+        app:layout_constraintTop_toBottomOf="@+id/edtServiceAmt" />
+
+    <Button
+        android:id="@+id/btnTip15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15%"
+        app:layout_constraintBottom_toTopOf="@+id/btnTip"
+        app:layout_constraintEnd_toStartOf="@id/btnTip18"
+        app:layout_constraintStart_toEndOf="@id/btnTip10"
+        app:layout_constraintTop_toBottomOf="@+id/edtServiceAmt" />
+
+    <Button
+        android:id="@+id/btnTip10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10%"
+        app:layout_constraintBottom_toTopOf="@+id/btnTip"
+        app:layout_constraintEnd_toStartOf="@id/btnTip15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtServiceAmt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
